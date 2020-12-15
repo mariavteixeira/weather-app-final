@@ -19,44 +19,45 @@
             <input type="search" placeholder="Enter a city..." class="form-control" id="city-input" autocomplete="off"/>
             </div>
             <div class="col-3">
-            <input type="submit" value="Search" class="btn btn-primary w-100"/>
+            <input type="submit" value="Search" class="btn-search"/>
             </div>
             </div>
         </form>
         <div class="overview">
-    <h1 id="city">
-    </h1>
+            <div class="row">
+                <div class="col-12">
+    <h1 id="city"></h1>
+    </div>
+        <div class="clearfix weather-temperature col-12">
+            <img src="" alt="" id="icon" />
+            <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |<a
+                    href="#" id="fahrenheit-link">°F</a></span>
+        </div>
+        <div class="col-12">
     <ul>
-        <li>Last updated: <span id="date"></span>
-        </li>
         <li id="description">
-            Clear
+    </li>
+        <li>
+            <span id="date"></span>
         </li>
     </ul>
     </div>
-    <div class="row">
-        <div class="col-6">
-            <div class="clearfix weather-temperature">
-            <img src="" alt="" id="icon">
-            <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |<a href="#" id="fahrenheit-link">°F</a></span>
-            </div>
-        </div>
-        <div class="col-6">
+        <div class="col-12">
             <ul>
-                <li>
+                <li class="more-info">
                     Humidity: <span id="humidity"></span>%
                 </li>
-                <li>
+                <li class="more-info">
                     Wind: <span id="wind"></span>km/h
                 </li>
             </ul>
-        </div>
+    </div>
     </div>
     <div class="row weather-forecast" id="forecast">
     </div>
     </div>
-    <small>
-        <a href="https://github.com/mariavteixeira/weather-app-final" target="_blank">Open-source code</a> by Maria Teixeira
+    <small class="source">
+        <a href="https://github.com/mariavteixeira/weather-app-final" target="_blank">Open-source code</a> by <a href="https://www.linkedin.com/in/mariavteixeira96/" target="_blank">Maria Teixeira</a>
     </small>
     </div>
 </div>
